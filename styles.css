@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20vh;
+  text-align: center;
+  background-color: #eee;
+}
+
+.controls, .stopwatch {
+  margin: 0 auto;
+  background-color: cadetblue;
+  max-width: 350px;
+  font-family: arial;
+  color: #ddd;
+}
+
+.controls {
+  padding: 10px 10px 0 10px;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 22px;
+  font-family: arial;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: #999;
+}
+
+.stopwatch {
+  font-size: 60px;
+  letter-spacing: 6px;
+  padding: 10px;
+}
