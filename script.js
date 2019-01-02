@@ -40,14 +40,17 @@ class Stopwatch extends React.Component {
     calculate () {
         const times = this.state.times;
         times.miliseconds += 1;
+        
         if (times.miliseconds >= 100) {
             times.seconds += 1;
             times.miliseconds = 0;
         }
+      
         if (times.seconds >= 60) {
             times.minutes += 1;
             times.seconds = 0;
         }
+      
         this.setState({times});
     }
     
@@ -74,9 +77,11 @@ class Stopwatch extends React.Component {
 
 function pad0(value) {
     let result = value.toString();
+    
     if (result.length < 2) {
         result = '0' + result;
     }
+  
     return result;
 }
 
